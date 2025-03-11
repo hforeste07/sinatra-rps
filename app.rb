@@ -6,10 +6,13 @@ get("/") do
 end
 
 get("/rock") do
-  end
+  erb(:rock)
+end
 
 get("/scissors") do
-  end
+  erb(:scissors)
+end
 
 get("/paper") do
-  end
+  erb(:paper)
+end

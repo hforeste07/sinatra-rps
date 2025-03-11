@@ -1,26 +1,39 @@
-<%=
-move = ["rock", "paper", "scissors"]
+<%= move = ["rock", "paper", "scissors"]
 
-@player_move = "rock"
+player_move = "rock"
 @comp_move = move.sample
 
 if @comp_move == "rock"
-  @outcome = "tied"
-elsif @comp_move == "scissors" 
-  @outcome = "lost"
+  outcome = "tied"
+elsif @comp_move == "paper" 
+  outcome = "lost"
 else
-  @outcome = "won"
+  outcome = "won"
 end %>
 
+<div>
+  <a href="/rock">Play rock</a>
+</div>
+
+<div>
+  <a href="/paper">Play paper</a>
+</div>
+    
+<div>
+  <a href="/scissors">Play scissors</a>
+</div>
+
+
+
 
 <h2>
-  We played <%= @player_move %>!
+  We played rock!
 </h2>
 
 <h2>
-  They played + <%= @comp_move %>!
+  They played <%= @comp_move %>!
 </h2>
 
 <h2>
-  We <%= @outcome %>!
+  We <%= outcome %>!
 </h2>

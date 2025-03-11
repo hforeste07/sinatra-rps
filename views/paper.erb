@@ -1,26 +1,26 @@
-<%= 
+<%=
 move = ["rock", "paper", "scissors"]
 
 @player_move = "paper"
 @comp_move = move.sample
 
 if @comp_move == "paper"
-  @outcome = "tied"
-elsif @comp_move == "rock" 
-  @outcome = "lost"
+  outcome = "tied"
+elsif @comp_move == "scissors" 
+  outcome = "lost"
 else
-  @outcome = "won"
-end %>
-
+  outcome = "won"
+end
+%>
 
 <h2>
-  We played <%= @player_move %>!
+  We played paper!
 </h2>
 
 <h2>
-  They played + <%= @comp_move %>!
+  They played <%= @comp_move %>!
 </h2>
 
 <h2>
-  We <%= @outcome %>!
+  We <%= outcome %>!
 </h2>
