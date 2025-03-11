@@ -1,4 +1,4 @@
-<%= 
+<%=
 move = ["rock", "paper", "scissors"]
 
 @player_move = "rock"
@@ -15,3 +15,17 @@ end
 
 erb(:move)
 %>
+
+<div>
+<h2>
+  We played <%= @player_move %>!
+</h2>
+
+<h2>
+  They played + <%= @comp_move %>!
+</h2>
+
+<h2>
+  We <%= @outcome %>!
+</h2>
+</div>>
