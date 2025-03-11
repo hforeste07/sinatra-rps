@@ -6,19 +6,10 @@ get("/") do
 end
 
 get("/rock") do
-  moves = ["rock", "paper", "scissors"]
-
-  comp_move = move.sample
-end
+  end
 
 get("/scissors") do
-  moves = ["rock", "paper", "scissors"]
-
-  comp_move = move.sample
-end
+  end
 
 get("/paper") do
-  moves = ["rock", "paper", "scissors"]
-
-  comp_move = move.sample
-end
+  end
