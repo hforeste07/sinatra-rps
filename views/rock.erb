@@ -1,15 +1,3 @@
-<%= move = ["rock", "paper", "scissors"]
-
-player_move = "rock"
-@comp_move = move.sample
-
-if @comp_move == "rock"
-  outcome = "tied"
-elsif @comp_move == "paper" 
-  outcome = "lost"
-else
-  outcome = "won"
-end %>
 
 <div>
   <a href="/rock">Play rock</a>
@@ -23,7 +11,18 @@ end %>
   <a href="/scissors">Play scissors</a>
 </div>
 
+<% move = ["rock", "paper", "scissors"]
 
+player_move = "rock"
+@comp_move = move.sample
+
+if @comp_move == "rock"
+  outcome = "tied"
+elsif @comp_move == "paper" 
+  outcome = "lost"
+else
+  outcome = "won"
+end %>
 
 
 <h2>
@@ -37,3 +36,5 @@ end %>
 <h2>
   We <%= outcome %>!
 </h2>
+
+<a href="/">Home</a>
