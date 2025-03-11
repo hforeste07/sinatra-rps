@@ -1,0 +1,15 @@
+move = ["rock", "paper", "scissors"]
+
+@player_move = "paper"
+@comp_move = move.sample
+
+if @comp_move == "paper"
+  @outcome = "tied"
+elsif @comp_move == "rock" 
+  @outcome = "lost"
+else
+  @outcome = "won"
+end
+
+
+erb(:move)

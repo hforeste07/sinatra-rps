@@ -2,8 +2,7 @@ require "sinatra"
 require "sinatra/reloader"
 
 get("/") do
- erb(:layout)
- erb(:move)
+ erb(:home)
 end
 
 get("/rock") do
